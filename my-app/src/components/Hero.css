@@ -1,0 +1,184 @@
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+  background:white;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+  list-style:none;
+}
+
+.icons{
+  display:flex;
+  gap:20px;
+  font-size:20px;
+}
+
+/* .hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:80px;
+  min-height:80vh;
+} */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/homeBackground.png") center/cover no-repeat;
+  filter: blur(3px);
+  transform: scale(1.1);
+  opacity: 0.4;
+
+  z-index: -1; /* IMPORTANT CHANGE */
+}
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  overflow: hidden;
+  z-index: 1; /* ADD THIS */
+}
+
+.hero-right,
+.hero-left {
+  position: relative;
+  z-index: 2;
+}
+
+.badge{
+  background:#f2e8ff;
+  /* color:#8a2be2; */
+
+  color: #D2691E;
+  padding:10px 20px;
+  border-radius:20px;
+}
+
+.hero h1{
+  margin-top:20px;
+  font-size:64px;
+}
+
+.hero h1 span{
+  color:#D2691E;
+}
+
+.hero p{
+  margin-top:20px;
+  font-size:22px;
+  line-height:1.6;
+}
+
+.buttons{
+  margin-top:30px;
+  display:flex;
+  gap:20px;
+}
+
+.primary-btn{
+  background:#D2691E;
+  color:white;
+  border:none;
+  padding:15px 25px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.secondary-btn{
+  background:white;
+  border:2px solid #D2691E;
+  color:#D2691E;
+  padding:15px 25px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.hero-right{
+  width:40%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.box {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.why-choose,
+.how-it-works {
+  padding: 80px;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+.how-it-works {
+  background: #faf7fd;
+}
+
+.steps {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.step {
+  flex: 1;
+}
+
+.step span {
+  font-size: 48px;
+  color: #D2691E;
+  font-weight: bold;
+}
+
+.cta {
+  margin: 80px;
+  padding: 80px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    #D2691E,
+    #ec4899
+  );
+}
+
+.cta button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: #D2691E;
+  font-weight: bold;
+  cursor: pointer;
+}

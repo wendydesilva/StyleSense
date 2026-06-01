@@ -1,0 +1,21 @@
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import WhyChoose from "../components/WhyChoose";
+import HowItWorks from "../components/HowItWorks";
+import CTA from "../components/CTA";
+
+function Home() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+
+      {/* Bottom Sections */}
+      <WhyChoose />
+      <HowItWorks />
+      <CTA />
+    </>
+  );
+}
+
+export default Home;
