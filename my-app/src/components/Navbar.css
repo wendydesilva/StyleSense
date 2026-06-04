@@ -1,15 +1,91 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 40px;
+
+  width: 100%;
+  min-height: 70px;   /* ✅ IMPORTANT FIX */
+
+background: linear-gradient(135deg, #D2691E, #ec4899);
+
+  color: white;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: white; /* ✅ FIXED */
+  letter-spacing: 1px;
+}
+
+/* Nav links */
+
 .nav-links {
   display: flex;
-  gap: 30px;
+  align-items: center;
+  gap: 28px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: rgba(255, 255, 255, 0.85); /* softer white */
   font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
+/* hover */
 .nav-links a:hover {
-  color: #8a2be2;
+  color: #ffffff;
+}
+
+/* FIX underline (important fix) */
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+/* icons */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.icons svg {
+  transition: all 0.3s ease;
+}
+
+.icons svg:hover {
+  transform: scale(1.2);
+  color: #ffe6ff;
 }

@@ -7,7 +7,7 @@ import CTA from "../components/CTA";
 function Home() {
   return (
     <>
-      <Navbar />
+  
       <Hero />
 
       {/* Bottom Sections */}

@@ -1,22 +1,4 @@
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 50px;
-  background:white;
-}
 
-.nav-links{
-  display:flex;
-  gap:30px;
-  list-style:none;
-}
-
-.icons{
-  display:flex;
-  gap:20px;
-  font-size:20px;
-}
 
 /* .hero{
   display:flex;

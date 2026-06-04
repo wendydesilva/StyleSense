@@ -1,0 +1,114 @@
+.quiz-container {
+  min-height: 100vh;
+  background: #f7f0fa;
+  padding: 40px 80px;
+}
+
+.progress-section {
+  margin-bottom: 40px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.progress-fill {
+  width: 17%;
+  height: 100%;
+  background: #D2691E;
+  border-radius: 10px;
+}
+
+.quiz-card {
+  background: white;
+  border-radius: 25px;
+  padding: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.quiz-card h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.quiz-card p {
+  color: #666;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.options {
+  display: flex;
+  gap: 25px;
+}
+
+.options button {
+  flex: 1;
+  padding: 35px;
+  font-size: 28px;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.options button:hover {
+  border-color: #D2691E;
+}
+
+.divider {
+  height: 1px;
+  background: #ddd;
+  margin: 50px 0;
+}
+
+.quiz-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-btn {
+  padding: 15px 40px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.next-btn {
+  padding: 15px 40px;
+  background: linear-gradient(135deg, #D2691E, #D2691E);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.body-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.body-options button {
+  padding: 40px;
+  font-size: 24px;
+  border: 2px solid #ddd;
+  border-radius: 18px;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.body-options button:hover {
+  border-color: #D2691E;
+}

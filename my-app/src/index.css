@@ -8,3 +8,15 @@ body{
   font-family: Arial, sans-serif;
   background:#faf7fd;
 }
+
+:root {
+  --accent: #8a2be2;
+  --accent-bg: rgba(138, 43, 226, 0.1);
+  --accent-border: #8a2be2;
+
+  --border: #e5e5e5;
+  --text-h: #222;
+
+  --social-bg: rgba(0, 0, 0, 0.05);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

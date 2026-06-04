@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { FaHeart, FaShoppingCart, FaUser } from "react-icons/fa";
 import './Navbar.css';
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
   return (
     <nav className="navbar">
       <div className="logo">
@@ -31,10 +33,14 @@ function Navbar() {
         </li>
       </ul>
 
-      <div className="icons">
+     <div className="icons">
         <FaHeart />
         <FaShoppingCart />
-        <FaUser />
+
+        <FaUser
+        className="user-icon"
+        onClick={() => navigate("/login")}
+         />
       </div>
     </nav>
   );
