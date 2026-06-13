@@ -1,0 +1,88 @@
+.outfit-matcher {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.outfit-matcher .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f3e8ff;
+  color: #D2691E;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 18px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+}
+
+.outfit-matcher h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.outfit-matcher p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.upload-box {
+  border: 2px dashed #d1d5db;
+  border-radius: 16px;
+  background: #fff;
+  padding: 60px 40px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.upload-box.dragging {
+  border-color: #D2691E;
+  background: #faf5ff;
+}
+
+.upload-icon {
+  width: 80px;
+  height: 80px;
+  background: #f3e8ff;
+  color: #D2691E;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.upload-box h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.upload-subtext {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 28px;
+}
+
+.choose-file-btn {
+  background: linear-gradient(135deg, #D2691E 0%, #d19d78 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.choose-file-btn:hover {
+  opacity: 0.9;
+}

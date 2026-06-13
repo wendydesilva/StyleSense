@@ -15,7 +15,59 @@ function StyleQuiz() {
     if (step > 1) {
       setStep(step - 1);
     }
+
   };
+
+    const bodyTypes = [
+  {
+    label: "Rectangle",
+    icon: (
+      <svg viewBox="0 0 60 100" width="50" height="80">
+        <path d="M20 10 L40 10 L40 90 L20 90 Z" fill="currentColor" opacity="0.8"/>
+      </svg>
+    ),
+  },
+  {
+    label: "Triangle",
+    icon: (
+      <svg viewBox="0 0 60 100" width="50" height="80">
+        <path d="M25 10 L35 10 L42 90 L18 90 Z" fill="currentColor" opacity="0.8"/>
+      </svg>
+    ),
+  },
+  {
+    label: "Inverted Triangle",
+    icon: (
+      <svg viewBox="0 0 60 100" width="50" height="80">
+        <path d="M18 10 L42 10 L35 90 L25 90 Z" fill="currentColor" opacity="0.8"/>
+      </svg>
+    ),
+  },
+  {
+    label: "Hourglass",
+    icon: (
+      <svg viewBox="0 0 60 100" width="50" height="80">
+        <path d="M18 10 L42 10 L30 50 L42 90 L18 90 L30 50 Z" fill="currentColor" opacity="0.8"/>
+      </svg>
+    ),
+  },
+  {
+    label: "Round",
+    icon: (
+      <svg viewBox="0 0 60 100" width="50" height="80">
+        <ellipse cx="30" cy="50" rx="22" ry="40" fill="currentColor" opacity="0.8"/>
+      </svg>
+    ),
+  },
+  {
+    label: "Athletic",
+    icon: (
+      <svg viewBox="0 0 60 100" width="50" height="80">
+        <path d="M20 10 L40 10 L38 40 L42 90 L30 90 L18 90 L22 40 Z" fill="currentColor" opacity="0.8"/>
+      </svg>
+    ),
+  },
+];
 
   return (
   
@@ -45,26 +97,26 @@ function StyleQuiz() {
             <div className="options">
               <button>Male</button>
               <button>Female</button>
-              <button>Non-binary</button>
+              <button>Other</button>
             </div>
           </>
         )}
 
-        {step === 2 && (
-          <>
-            <h1>What's your body type?</h1>
-            <p>We'll recommend styles that flatter your shape</p>
+       {step === 2 && (
+  <>
+    <h1>What's your body type?</h1>
+    <p>We'll recommend styles that flatter your shape</p>
 
-            <div className="body-options">
-              <button>Rectangle</button>
-              <button>Triangle</button>
-              <button>Inverted Triangle</button>
-              <button>Hourglass</button>
-              <button>Round</button>
-              <button>Athletic</button>
-            </div>
-          </>
-        )}
+    <div className="body-options visual-options">
+      {bodyTypes.map((type) => (
+        <button key={type.label} className="visual-option">
+          {type.icon}
+          <span>{type.label}</span>
+        </button>
+      ))}
+    </div>
+  </>
+)}
 
         {step === 3 && (
           <>

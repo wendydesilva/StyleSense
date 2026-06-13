@@ -6,10 +6,9 @@
   padding: 18px 40px;
 
   width: 100%;
-  min-height: 70px;   /* ✅ IMPORTANT FIX */
+  min-height: 70px;   
 
-background: linear-gradient(135deg, #D2691E, #ec4899);
-
+background: linear-gradient(135deg, #D2691E 0%, #d19d78 100%);
   color: white;
 
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);

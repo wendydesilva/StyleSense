@@ -112,3 +112,28 @@
 .body-options button:hover {
   border-color: #D2691E;
 }
+
+.visual-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.visual-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 8px;
+  color: #475569;
+}
+
+.visual-option:hover,
+.visual-option.selected {
+  color: #6366f1;
+  border-color: #6366f1;
+}
+
+.visual-option svg {
+  transition: color 0.2s ease;
+}
