@@ -18,15 +18,15 @@ background: linear-gradient(135deg, #D2691E 0%, #d19d78 100%);
   z-index: 1000;
 }
 
-/* Logo */
+
 .logo h2 {
   font-size: 24px;
   font-weight: 800;
-  color: white; /* ✅ FIXED */
+  color: white; 
   letter-spacing: 1px;
 }
 
-/* Nav links */
+
 
 .nav-links {
   display: flex;
@@ -38,19 +38,19 @@ background: linear-gradient(135deg, #D2691E 0%, #d19d78 100%);
 }
 .nav-links a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.85); /* softer white */
+  color: rgba(255, 255, 255, 0.85); 
   font-weight: 500;
   font-size: 15px;
   transition: all 0.3s ease;
   position: relative;
 }
 
-/* hover */
+
 .nav-links a:hover {
   color: #ffffff;
 }
 
-/* FIX underline (important fix) */
+
 .nav-links li {
   position: relative;
 }
@@ -70,7 +70,7 @@ background: linear-gradient(135deg, #D2691E 0%, #d19d78 100%);
   width: 100%;
 }
 
-/* icons */
+
 .icons {
   display: flex;
   align-items: center;

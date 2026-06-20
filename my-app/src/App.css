@@ -18,7 +18,7 @@
   outline-offset: 2px;
 }
 
-/* HERO */
+
 .hero {
   position: relative;
 }
@@ -58,7 +58,7 @@
     rotateY(39deg) scale(0.8);
 }
 
-/* CENTER */
+
 #center {
   display: flex;
   flex-direction: column;
@@ -75,7 +75,7 @@
   }
 }
 
-/* NEXT STEPS */
+
 #next-steps {
   display: flex;
   border-top: 1px solid var(--border);
@@ -104,7 +104,7 @@
   }
 }
 
-/* DOCS */
+
 #docs {
   border-right: 1px solid var(--border);
 }
@@ -116,7 +116,7 @@
   }
 }
 
-/* LINKS */
+
 #next-steps ul {
   list-style: none;
   padding: 0;
@@ -169,7 +169,7 @@
   }
 }
 
-/* SPACER */
+
 #spacer {
   height: 88px;
   border-top: 1px solid var(--border);
@@ -181,7 +181,7 @@
   }
 }
 
-/* TICKS */
+
 .ticks {
   position: relative;
   width: 100%;

@@ -10,7 +10,7 @@ function Home() {
   
       <Hero />
 
-      {/* Bottom Sections */}
+
       <WhyChoose />
       <HowItWorks />
       <CTA />
